@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Todo app</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="scss/main.css">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Josefin+Sans">
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+</head>
+<body>
+<div class="wrapper">
+  <div class="todo__container">
+    <!-- Todo Header -->
+    <header class="todo__header">
+      <h1 class="todo__header--title">TODO</h1>
+      <div class="todo__header--icon"></div>
+      
+    </header>
+
+     <!-- create a todo -->
+    <form action="#" class="todo__form">
+      
+      <input class="todo__input" type="text" placeholder="Create a new todo...">
+     </form>
+     
+     <ul class="todo__tasks">
+
+    <li class="todo__tasks--incomplete"><span class="todo__uncheck"><img src="images/icon-check.svg" alt=""></span>Get groceries</li>
+       
+     <li class="todo__tasks--incomplete"><span class="todo__uncheck"><img src="images/icon-check.svg" alt=""></span>Clean the bedroom</li>
+     
+     <li class="todo__tasks--incomplete"><span class="todo__uncheck"><img src="images/icon-check.svg" alt=""></span>Wash dishes</li>
+     
+     <li class="todo__tasks--incomplete"><span class="todo__uncheck"><img src="images/icon-check.svg" alt=""></span>Look at cars</li>
+     </ul>
+
+     <section class="items">
+   <p class="items__left"># items left</p>
+
+   <div class="items__status">
+     <p class="items__status--item">All</p>
+     <p class="items__status--item">Active</p>
+     <p class="items__status--item">Completed</p>
+   </div>
+    <p class="items__status--clear">Clear Completed</p>
+    
+  </section>
+
+  <footer class="footer__drag">
+    Drag and drop to reorder list
+   </footer>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

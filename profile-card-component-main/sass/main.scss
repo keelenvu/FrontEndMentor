@@ -1,0 +1,109 @@
+$color-primary: hsl(185, 75%, 39%);
+$color-secondary:hsl(229, 23%, 23%);
+$color-tertiary: hsl(227, 10%, 46%);
+
+* {
+ padding: 0;
+ margin: 0;
+}
+
+body {
+ font-size: 18px;
+ font-family: Kumbh Sans, sans-serif;
+}
+
+.hero {
+ 
+ height: 100vh;
+ display:flex;
+ align-items: center;
+ justify-content: center;
+ background-color: $color-primary;
+ overflow:hidden;
+
+}
+
+.card {
+ background-image: url(../images/bg-pattern-card.svg);
+ background-size: 100% 35%;
+ background-repeat: no-repeat;
+ height: 22rem;
+ width: 20rem;
+ background-color: #fff;
+ z-index:100;
+ border-radius: 5%;
+ border: 3px solid black;
+ position:absolute;
+ 
+
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ &__logo {
+  border-radius: 50%;
+  z-index:20;
+  border: 5px solid white;
+  margin-top: 3rem;
+ }
+
+
+
+ &__info {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-self: flex-end;
+  width: 100%;
+
+
+  &-follow-label {
+   font-size: .7rem;
+   margin: .3rem 0;
+  }
+ }
+
+ &__line {
+  width: 100%;
+  border-top: 1px solid lightgray;
+  margin: 0.5rem 0 1.5rem 0;
+ }
+
+ &__demo {
+  margin-top: 1rem;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+
+  &-name {
+   font-weight: bold;
+   margin-right: .5rem;
+  }
+  
+
+  &-age {
+   color: $color-tertiary;
+   font-size: 16px;
+  }
+ }
+
+ &__location {
+  color: $color-tertiary;
+  font-size: 14px;
+  margin: 1rem 0 1rem 0;
+  font-weight: strong;
+ }
+}
+
+.hero__image-top {
+ position:relative;
+ bottom: 50%;
+ z-index: 11;
+}
+
+.hero__image-bottom {
+ position:relative;
+ top: 60%;
+ z-index: 10;
+}

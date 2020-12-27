@@ -1,0 +1,191 @@
+body {
+ margin: 0;
+ padding: 0;
+ font-family: "Josefin Sans", sans-serif;
+ font-size: 18px;
+ background-color: hsl(235, 21%, 11%);
+}
+
+
+.wrapper {
+ display: flex; 
+ flex-direction: column;
+ background-image: url(../images/bg-desktop-dark.jpg);
+ background-repeat: no-repeat;
+ color: hsl(236, 33%, 92%);
+
+ background-size: 100% 30%;
+}
+
+.wrapper--light {
+ background-image: url(../images/bg-desktop-light.jpg);
+ color: black;
+ background-color: white;
+
+ .todo__header--icon {
+  background: url(../images/icon-moon.svg) no-repeat;
+ }
+
+ .todo__tasks {
+ background-color: white;
+ box-shadow: 0.5px 0.5px 10px #ccc;
+ }
+
+ .todo__input {
+  background-color: white;
+  color: #000;
+ }
+
+ .items {
+  background-color: #fff;
+ }
+}
+
+
+.todo__container {
+ display:flex;
+ align-self:center;
+ flex-direction: column;
+
+}
+
+//todo title
+.todo__header {
+ display: flex;
+ justify-content: space-between;
+ color: #fff;
+ align-items: center;
+ letter-spacing: 1rem;
+}
+
+.todo__header--icon {
+ cursor: pointer;
+
+ height: 1.6rem;
+ width: 1.6rem;
+ background: url(../images/icon-sun.svg) no-repeat;
+}
+
+//items
+.todo__input {
+ display:flex;
+ justify-content: center;
+ background-color: hsl(235, 24%, 19%);
+ border: none;
+ border-radius: 1rem;
+ width: 40vw;
+ padding: 2rem 2rem;
+ color: hsl(236, 33%, 92%);
+ font-size: 20px;
+}
+
+
+//box of tasks
+.todo__tasks {
+ display: flex;
+ flex-direction: column;
+ margin-top: 1.5rem;
+ border-radius: 1rem;
+ background-color: hsl(235, 24%, 19%);
+ padding-inline-start: 0;
+}
+
+.todo__tasks--incomplete {
+ display:flex;
+ align-items: center;
+ padding: 1.5rem;
+ border-bottom: 1px solid gray;
+
+ &:last-child {
+  border-bottom: 0;
+ }
+}
+
+.todo__uncheck {
+ display:flex;
+ justify-content: center;
+ align-items: center;
+
+ border-radius: 50%;
+ border: 1px solid hsl(233, 14%, 35%);
+ margin-right: 0.5rem;
+ width: 1.2rem;
+ height: 1.2rem;
+ cursor:pointer;
+ 
+ img {
+  display: none;
+ }
+ 
+}
+
+.todo__check {
+ background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+
+ display:flex;
+ justify-content: center;
+ align-items: center;
+
+ border-radius: 50%;
+ border: 1px solid hsl(233, 14%, 35%);
+ margin-right: 0.5rem;
+ width: 1.2rem;
+ height: 1.2rem;
+ 
+ cursor:pointer;
+ img {
+  display: flex;
+ }
+}
+
+
+
+
+
+.items {
+ display:flex;
+ justify-content: space-around;
+ align-content: center;
+ background-color: hsl(235, 24%, 19%);
+ color:hsl(233, 14%, 35%);
+ font-size: 16px;
+ border-bottom-left-radius: 1rem;
+ border-bottom-right-radius: 1rem;
+}
+
+
+ .items__status {
+  display:flex;
+  font-weight: 700;  
+  .items__status--item {
+   padding: 0 .8rem;
+   cursor: pointer;
+
+   &:hover {
+    color: hsl(220, 98%, 61%);
+   }
+
+   
+
+   &:first-child {
+    color: hsl(220, 98%, 61%);
+   }
+  }
+ }
+
+ .items__status--clear {
+  cursor: pointer;
+
+  &:hover {
+   color: hsl(220, 98%, 61%);
+  }
+ }
+
+.footer__drag {
+text-align: center;
+color:hsl(233, 14%, 35%);
+margin: 2rem 0;
+}
+
+//create a new todo
+
